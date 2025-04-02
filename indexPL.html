@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Moje Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="media.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Szymon Jaworski</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">O mnie</a></li>
+          <li><a href="#experience">Doświadczenie</a></li>
+          <li><a href="#projects">Projekty</a></li>
+          <li><a href="#certificates">Certyfikaty</a></li>
+          <li><a href="#contact">Kontakt</a></li>
+          <li>
+            <a href="index.html" title="English site version! :)"
+              ><img src="united-kingdom.png" id="flag"
+            /></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Szymon Jaworski</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">O mnie</a></li>
+          <li>
+            <a href="#experience" onclick="toggleMenu()">Doświadczenie</a>
+          </li>
+          <li><a href="#projects" onclick="toggleMenu()">Projekty</a></li>
+          <li><a href="#certificates" onclick="toggleMenu()">Certyfiakty</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Kontakt</a></li>
+          <li>
+            <a href="index.html" title="English site version! :)"
+              ><img src="united-kingdom.png" id="flag"
+            /></a>
+          </li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="112.jpeg" alt="Szymon Jaworski" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Witaj, Jestem</p>
+        <h1 class="title">Szymon Jaworski</h1>
+        <p class="section__text__p2">Full Stack Developer</p>
+        <div class="btn-container">
+          <button class="btn btn-color-2" onclick="window.open('/CVpl.pdf')">
+            Pobierz CV
+          </button>
+          <button
+            class="btn btn-color-1"
+            onclick="window.location.href='#contact'"
+          >
+            Kontakt
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://linkedin.com/'"
+          />
+          <img
+            src="github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/SzymonJawors'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Poznaj mnie bliżej!</p>
+      <h1 class="title">O mnie</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img src="112.jpeg" alt="Profile picture" class="about-pic" />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img src="experience.png" alt="Experience icon" class="icon" />
+              <h3>Doświadczenie</h3>
+              <p>
+                Certyfikat HarvardX <br />CS50's Web Programming with Python and
+                Javascript i
+              </p>
+              <p>
+                2+ lata <br />Frontend/Backend Developmentu w Technikum
+                Informatycznym
+              </p>
+            </div>
+            <div class="details-container">
+              <img src="education.png" alt="Education icon" class="icon" />
+              <h3>Edukacja</h3>
+              <p>
+                -Technikum Informatyczne(5 lat)<br />-Studia związane z Computer
+                Science (rozpoczęte od września)
+              </p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              Cześć! Jestem Szymon, 20-letni absolwent technikum informatycznego i
+              pasjonat web developmentu, skupiający się na tworzeniu
+              nowoczesnych, funkcjonalnych i przyjaznych dla użytkownika
+              aplikacji webowych. Posiadam ponad 2-letnie doświadczenie w pracy
+              z HTML, CSS, JavaScript, PHP i bazami danych. Niedawno ukończyłem
+              kurs CS50W na HarvardX, gdzie zdobyłem umiejętności w Pythonie,
+              Django, JavaScript oraz React. Pracując nad projektami takimi jak
+              platformy e-commerce, sieci społecznościowe i QuizzApp, skutecznie
+              zaimplementowałem systemy autoryzacji, funkcjonalności e-commerce
+              oraz interaktywne interfejsy użytkownika. Obecnie szukam pracy na
+              stanowisku Junior Web Developer / Full-Stack Developer w
+              środowisku zdalnym. Dodatkowo, chcę rozwijać swoje umiejętności w
+              sztucznej inteligencji, poszerzając wiedzę w zakresie
+              automatyzacji, analizy danych i uczenia maszynowego, aby radzić
+              sobie z wyzwaniami nie tylko w web developmentcie, ale także w
+              innych obszarach.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="window.location.href='#experience'"
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Poznaj moje</p>
+      <h1 class="title">Doświadczenie</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frontend Development</h2>
+            <div class="article-container">
+              <article>
+                <img src="checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>HTML, CSS, SASS</h3>
+                  <p>Zaawansowany</p>
+                </div>
+              </article>
+              <article>
+                <img src="checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>JavaScript, AJAX, Fetch</h3>
+                  <p>Średnio zaawansowany</p>
+                </div>
+              </article>
+              <article>
+                <img src="checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>React</h3>
+                  <p>Podstawy</p>
+                </div>
+              </article>
+              <article>
+                <img src="checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>Git, UI/UX</h3>
+                  <p>Średnio zaawansowany</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Backend Development</h2>
+            <div class="article-container">
+              <article>
+                <img src="checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>Python, Django</h3>
+                  <p>Średnio zaawansowany</p>
+                </div>
+              </article>
+              <article>
+                <img src="checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>MySQL, SQLite</h3>
+                  <p>Średnio zaawansowany</p>
+                </div>
+              </article>
+              <article>
+                <img src="checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>CI/CD, PHP</h3>
+                  <p>Podstawy</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="window.location.href='#projects'"
+      />
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Przejrzyj moje najnowsze</p>
+      <h1 class="title">Projekty</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="wiki.png" alt="Project Wiki" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">
+              Projekt Wikipedia
+            </h2>
+            <p>
+              Interaktywna encyklopedia bazowana na Django, pozwalająca
+              użytkownikom do wyszukiwania i dodawania informacji.
+            </p>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/SzymonJawors/Wiki-Project'"
+              >
+                Github
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="1.png" alt="Project QuizzApp" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">Projekt QuizzApp</h2>
+            <p>
+              Aplikacja quizowa, która pozwala użytkownikom na tworzenie quizów,
+              rozwiązywanie ich, komentowanie itd., zbudowana przy użyiu Django
+              i JavaScript'a
+            </p>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/SzymonJawors/QuizzApp-project'"
+              >
+                Github
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="mail.png" alt="Project Mail" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">Projekt Mail</h2>
+            <p>
+              Aplikacja mailowa , która pozwala użytkownikom na wysyłanie,
+              tworzenie, zarządzanie mailami, zbudowana przy użyiu Django, i
+              stylowana przy użyciu Bootstrapa.
+            </p>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/SzymonJawors/MailProject'"
+              >
+                Github
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="network.png"
+                alt="Project Social Network"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">
+              Projekt Media społecznościowe
+            </h2>
+            <p>
+              Aplikacja społecznościowa, która pozwala użytkownikom na tworzenie
+              kont, tworzenie postów, likowanie, followanie użytkowników i wiele
+              więcej.
+            </p>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/SzymonJawors/Network-project'"
+              >
+                Github
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="commerce.png"
+                alt="Project Commerce"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">
+              Projekt e-commerce
+            </h2>
+            <p>
+              Aplikacja e-commerce, która pozwala użytkownikom na wystawianie
+              przedmiotów, wyszukiwanie, licytowanie itd. Skupiona głównie na
+              funkcjonowaniu, a nie na wyglądzie, głównie użyłem do tego
+              Bootstrapa.
+            </p>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/SzymonJawors/CommerceProject'"
+              >
+                Github
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="window.location.href='#certificates'"
+      />
+    </section>
+    <section id="certificates">
+      <p class="section__text__p1">Moje Osiągnięcia</p>
+      <h1 class="title">Certyfikaty</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="verified.png"
+                alt="CS50 Web Certificate"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">
+              CS50's Web Programming with Python and JavaScript
+            </h2>
+            <p>
+               Zweryfikowany Certyfikat zdobyty z HarvardX, obejmujący Django, JavaScript i współczesne technologie webowe.
+            </p>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://courses.edx.org/certificates/f6bfd1cf145a4c7e86a4f3ea35532514'"
+              >
+                Zobacz Certyfikat
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="cs50.png"
+                alt="CS50 Web Certifiacte"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">
+              CS50's Web Programming with Python and JavaScript
+            </h2>
+            <p>Certyfikat zdobyty z HarvardX, programu z Uniwersytetu Harvardu oferującego kursy.</p>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://cs50.harvard.edu/certificates/61886928-732f-4590-8779-38cde30ca5a8'"
+              >
+                Zobacz Certyfikat
+              </button>
+            </div>
+            </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="skyscanner.png"
+                alt="Skyscanner Certifiacte"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">
+              Certyifkat Skyscanner Front End Engineering Job
+            </h2>
+            <p>Certyfikat zdobyty z symulacji pracy w Skyscanner, ukończenie praktycznego zadania z użyciem Reacta.</p>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/skoQmxqhtgWmKv2pm/km4rw7dihDr3etqom_skoQmxqhtgWmKv2pm_eedyp8T2CyqY7XaPr_1743322168221_completion_certificate.pdf'"
+              >
+                Zobacz Certyfikat
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="ea.png"
+                alt="EA Certifiacte"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">
+              Certyifkat Electronic Arts Software Engineering Job
+            </h2>
+            <p>Certyfikat zdobyty z symulacji pracy w Electronic Arts, ukończenie praktycznych zadań z użyciem C++.</p>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/j43dGscQHtJJ57N54/a77WE3de8qrxWferQ_j43dGscQHtJJ57N54_eedyp8T2CyqY7XaPr_1743504396670_completion_certificate.pdf'"
+              >
+                Zobacz Certyfikat
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="bcg.png"
+                alt="BCG Certifiacte"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">
+              Certyifkat BCG GenAI Job 
+            </h2>
+            <p>Certyfikat zdobyty z symulacji pracy w BCG, rozwój chatbota finansowego wspieranego przez AI dla zespołu GenAI Consulting.</p>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/SKZxezskWgmFjRvj9/gabev3vXhuACr48eb_SKZxezskWgmFjRvj9_eedyp8T2CyqY7XaPr_1743506679784_completion_certificate.pdf'"
+              >
+                Zobacz Certyfikat
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='#contact'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Skontaktuj się ze mną</p>
+      <h1 class="title">Kontakt</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p>
+            <a target="_blank" href="mailto:jawor12325@gmail.com"
+              >jawor12325@gmail.com</a
+            >
+          </p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a target="_blank" href="https://www.linkedin.com">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">O mnie</a></li>
+            <li><a href="#experience">Doświadczenie</a></li>
+            <li><a href="#projects">Projekty</a></li>
+            <li><a href="#certificates">Certyfikaty</a></li>
+            <li><a href="#contact">Kontakt</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2025 Szymon Jaworski. Wszelkie prawa zastrzeżone.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
